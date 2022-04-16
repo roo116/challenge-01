@@ -1,80 +1,57 @@
 # Code Refactor Starter Code
+ 
 
 ## Description
 
-This project was motivated by the desire to complete successfully the 24 week coding bootcamp at UNC, with the goal of learning something new, and acquiring some new skills. 
+This project was motivated by the desire to complete successfully the 24-week coding bootcamp at UNC, with the goal of learning something new, and acquiring some new skills. 
 
-I did not do this project because it was a "homework assignment", rather I took on this challenge because it is one of the requirements for completing the course.  
-
-The project itself provided some improvements to a website, by making the website more accessible, fix some broken functionality, and clean up the style sheet.
+I did not do this project because it was a "homework assignment", rather I took on this challenge because it is one of the requirements for completing the course. (Ok, so yeah,  I did this because it was a homework assignment.)  
 
 ## Acceptance Criteria and solutions
-The acceptance criteria follows with a brief description of changes made to meet the criteria. 
+1. WHEN I view the source code THEN I find semantic HTML elements
+    - added <header> and <nav> elements to replace the <div> elements in the header section.
+    - wrapped the hero image in a <section> tag rather than <div>.
+    - wrapped the content and benefits sections with the <main> tag.
+    - In the content section, replaced elements with <section> and <article> tags as appropriate.  
+    - did the same in the benefits section, first wrapping it in the <section> tag.
+    - finally I set the footer section with a <footer> tag, replacing the <div> tag. 
 
-WHEN I view the source code
-THEN I find semantic HTML elements
+2. WHEN I view the structure of the HTML elements THEN I find that the elements follow a logical structure independent of styling and positioning.
+    - I changed the order of the benefits section to more closely align with the articles position to the left.  The new order is Cost Management; Brand Awareness; Lead Generation. 
+    (NOTE: These should probably be further ordered so the page is read from left to right rather than from up to down but I haven't figured that out.  What I mean by that is that with Voice Over it would ideally read the "Search Engine Optimization" text and then read the "Cost Management" benefit text.  Currently Voice Over goes down to "Online Reputation Management" next. I will add it to the backlog for consideration in the next sprint.) 
 
-
-
-
-
-WHEN I view the structure of the HTML elements
-THEN I find that the elements follow a logical structure independent of styling and positioning
-
-WHEN I view the image elements
-THEN I find accessible alt attributes
-
-WHEN I view the heading attributes
-THEN they fall in sequential order
-
-WHEN I view the title element
-THEN I find a concise, descriptive title
+3. WHEN I view the image elements THEN I find accessible alt attributes.
+    - Added some descriptions to the alt attributes for the images in the content section.
+    - added the alt="" attribute to images in the benefits section, as these looked to be decorative images rather than informational. 
 
 
+4. WHEN I view the heading attributes THEN they fall in sequential order
+    - I left this as it, seemed to meet the criteria without requiring further changes. 
 
-## Installation
+5. WHEN I view the title element THEN I find a concise, descriptive title
+    - added a more descriptive title than "website".   
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+Additional Criteria
+6. Application's links all function correctly.
+    - added an id attribute to the the article tag for "search-engine-optimization"
 
-## Usage
+7. Application's CSS selectors and properties are consolidated and organized to follow semantic structure.
+    - order CSS file to mirror the order of the HTML page to the fullest extent possible.  Also consolidate several rules to clean up the CSS and reduce complexity. 
 
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+8. Application's CSS file is properly commented.
+    - added comments to the CSS file.  Hopefully it was done properly. :)
 
 ## Credits
-List your collaborators, if any, with links to their GitHub profiles.
+The code for this activity was sourced from https://github.com/coding-boot-camp/urban-octo-telegram.  All the coding was done by me without any collaboration from others.  However this activity was discussed with fellow classmates, at some of the study groups as well as during office hours on Saturday.  So I acknowledge the insights that these groups and people provided, and I am imminently grateful to all.  
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+ 
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+This is not a software project, rather it's a class activity.  This repo is available to all admins, educators and classmates associated with the UNC Coding Bootcamp.  Anyone else will rue the day...  
 
 ---
 
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
 ## Tests
 
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+Testing was performed using personal judgement; The Accessibility tools from Chrome and Firefox, and the use of Voice Over from Apple, Inc. 
