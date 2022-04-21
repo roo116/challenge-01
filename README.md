@@ -66,5 +66,5 @@ Testing was performed using
 ## Lessons Learned
 * spelling matters
 * articles about semantics were very useful.  In particular:<br />
-<a href="https://www.w3.org/WAI/tutorials/images/">Images Tutorial | Web Accessibility from W3</a>
+<a href="https://www.w3.org/WAI/tutorials/images/">Images Tutorial | Web Accessibility from W3</a>  
 <a href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Accessibility#screenreaders">Screen Readers article from MDN</a>
